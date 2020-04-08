@@ -9,10 +9,10 @@ steps:
 - uses: actions/checkout@v1
 - uses: actions/setup-java@v1
   with:
-    java-version: '12.x'
-- uses: subosito/flutter-action@v1
+    java-version: '11.x'
+- uses: S6-Kwetter-Luc/flutter-action@v1
   with:
-    flutter-version: '1.9.1+hotfix.6'
+    flutter-version: 'v1.12.13+hotfix.9'
 - run: flutter pub get
 - run: flutter test
 - run: flutter build apk
@@ -25,8 +25,8 @@ steps:
 - uses: actions/checkout@v1
 - uses: actions/setup-java@v1
   with:
-    java-version: '12.x'
-- uses: subosito/flutter-action@v1
+    java-version: '11.x'
+- uses: S6-Kwetter-Luc/flutter-action@v1
   with:
     channel: 'stable' # or: 'dev' or 'beta'
 - run: flutter pub get
@@ -41,8 +41,8 @@ steps:
 - uses: actions/checkout@v1
 - uses: actions/setup-java@v1
   with:
-    java-version: '12.x'
-- uses: subosito/flutter-action@v1
+    java-version: '11.x'
+- uses: S6-Kwetter-Luc/flutter-action@v1
   with:
     flutter-version: '1.12.x' # you can use 1.12
     channel: 'dev' # optional, default to: 'stable'
@@ -65,8 +65,8 @@ jobs:
       - uses: actions/checkout@v1
       - uses: actions/setup-java@v1
         with:
-          java-version: '12.x'
-      - uses: subosito/flutter-action@v1
+          java-version: '11.x'
+      - uses: S6-Kwetter-Luc/flutter-action@v1
         with:
           flutter-version: '1.11.0'
           channel: 'beta'
